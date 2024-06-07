@@ -613,6 +613,23 @@ processResources {
     }
 }
 
+tasks.register('genIntellijRuns') {
+    group = 'IDE'
+    description = 'Generates IntelliJ IDEA run configurations'
+    doLast {
+        // Add the logic to generate IntelliJ run configurations
+        println "Generating IntelliJ run configurations..."
+        // Example logic (customize as per your project's requirements)
+        file('src/main/resources/.idea/runConfigurations').mkdirs()
+        file('src/main/resources/.idea/runConfigurations/RunClient.xml').text = """<component name="ProjectRunConfigurationManager">
+            <configuration default="false" name="RunClient" type="Application" factoryName="Application" singleton="true">
+                <option name="MAIN_CLASS_NAME" value="net.minecraft.client.main.Main" />
+                <module name="${project.name}.main" />
+            </configuration>
+        </component>"""
+    }
+}
+
 // Automatically generate a mixin json file if it does not already exist
 tasks.register('generateAssets') {
     group = 'GT Buildscript'

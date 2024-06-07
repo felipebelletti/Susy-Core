@@ -9,7 +9,7 @@ import gregtech.api.recipes.builders.PrimitiveRecipeBuilder;
 import gregtech.api.recipes.builders.SimpleRecipeBuilder;
 import gregtech.api.recipes.ingredients.GTRecipeInput;
 import gregtech.core.sound.GTSoundEvents;
-import gregtechfoodoption.recipe.GTFORecipeMaps;
+//import gregtechfoodoption.recipe.GTFORecipeMaps;
 import supersymmetry.api.gui.SusyGuiTextures;
 import supersymmetry.api.recipes.builders.*;
 
@@ -331,7 +331,7 @@ public class SuSyRecipeMaps {
         RecipeMaps.ELECTROLYZER_RECIPES.setMaxOutputs(3);
         RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES.setMaxFluidOutputs(2);
         RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES.setMaxFluidInputs(1);
-        GTFORecipeMaps.GREENHOUSE_RECIPES.setMaxFluidInputs(4);
+//        GTFORecipeMaps.GREENHOUSE_RECIPES.setMaxFluidInputs(4);
         RecipeMaps.PYROLYSE_RECIPES.setMaxFluidOutputs(3);
         RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES.setSlotOverlay(false, false, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_ITEM_OVERLAY);
         RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES.setSlotOverlay(false, true, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_FLUID_OVERLAY);

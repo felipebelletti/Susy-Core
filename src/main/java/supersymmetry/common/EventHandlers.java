@@ -5,12 +5,13 @@ import com.alcatrazescapee.notreepunching.common.items.ModItems;
 import gregtech.api.util.GTTeleporter;
 import gregtech.api.util.TeleportHandler;
 import gregtech.common.items.MetaItems;
-import gregtechfoodoption.item.GTFOMetaItem;
+//import gregtechfoodoption.item.GTFOMetaItem;
 import net.minecraft.block.BlockCauldron;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -69,7 +70,8 @@ public class EventHandlers {
             event.player.getEntityWorld().spawnEntity(dropPod);
             event.player.startRiding(dropPod);
 
-            event.player.addItemStackToInventory(GTFOMetaItem.EMERGENCY_RATIONS.getStackForm(10));
+//            event.player.addItemStackToInventory(GTFOMetaItem.EMERGENCY_RATIONS.getStackForm(10));
+            event.player.addItemStackToInventory(new ItemStack(Items.COOKED_BEEF, 10));
             event.player.addItemStackToInventory(MetaItems.PROSPECTOR_LV.getChargedStack(100000));
         }
 

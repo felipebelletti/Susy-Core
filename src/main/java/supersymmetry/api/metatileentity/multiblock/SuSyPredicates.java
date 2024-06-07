@@ -1,6 +1,6 @@
 package supersymmetry.api.metatileentity.multiblock;
 
-import cam72cam.immersiverailroading.IRBlocks;
+//import cam72cam.immersiverailroading.IRBlocks;
 import gregtech.api.pattern.PatternStringError;
 import gregtech.api.pattern.TraceabilityPredicate;
 import gregtech.api.util.BlockInfo;
@@ -58,15 +58,15 @@ public class SuSyPredicates {
             .toArray(BlockInfo[]::new)
     );
 
-    private static final Supplier<TraceabilityPredicate> RAILS = () -> new TraceabilityPredicate(blockWorldState -> {
-        if(!Loader.isModLoaded(SuSyValues.MODID_IMMERSIVERAILROADING)) return true;
-
-        IBlockState state = blockWorldState.getBlockState();
-
-        Block block = state.getBlock();
-
-        return block == IRBlocks.BLOCK_RAIL.internal || block == IRBlocks.BLOCK_RAIL_GAG.internal;
-    });
+//    private static final Supplier<TraceabilityPredicate> RAILS = () -> new TraceabilityPredicate(blockWorldState -> {
+//        if(!Loader.isModLoaded(SuSyValues.MODID_IMMERSIVERAILROADING)) return true;
+//
+//        IBlockState state = blockWorldState.getBlockState();
+//
+//        Block block = state.getBlock();
+//
+//        return block == IRBlocks.BLOCK_RAIL.internal || block == IRBlocks.BLOCK_RAIL_GAG.internal;
+//    });
 
     @NotNull
     public static TraceabilityPredicate coolingCoils() {
@@ -78,8 +78,8 @@ public class SuSyPredicates {
         return SINTERING_BRICKS.get();
     }
 
-    @NotNull
-    public static TraceabilityPredicate rails() {
-        return RAILS.get();
-    }
+//    @NotNull
+//    public static TraceabilityPredicate rails() {
+//        return RAILS.get();
+//    }
 }

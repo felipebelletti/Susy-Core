@@ -38,8 +38,8 @@ public interface ICryogenicProvider {
             return MultiblockControllerBase.air().test(blockWorldState);
         }, () -> {
             MetaTileEntityHolder holder = new MetaTileEntityHolder();
-            holder.setMetaTileEntity(SuSyMetaTileEntities.BATH_CONDENSER[0]);
-            holder.getMetaTileEntity().onPlacement();
+//            holder.setMetaTileEntity(SuSyMetaTileEntities.BATH_CONDENSER[0]);
+//            holder.getMetaTileEntity().onPlacement();
             BlockInfo[] info = new BlockInfo[2];
             info[0] = new BlockInfo(MetaBlocks.MACHINE.getDefaultState(), holder);
             info[1] = new BlockInfo(Objects.requireNonNull(Blocks.AIR));

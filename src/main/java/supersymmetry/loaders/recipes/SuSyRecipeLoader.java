@@ -1,7 +1,5 @@
 package supersymmetry.loaders.recipes;
 
-import cam72cam.immersiverailroading.IRItems;
-import cam72cam.mod.serialization.TagCompound;
 import gregtech.api.GTValues;
 import gregtech.api.recipes.GTRecipeHandler;
 import gregtech.api.recipes.ModHandler;
@@ -18,7 +16,7 @@ import supersymmetry.common.blocks.SuSyBlocks;
 import supersymmetry.common.blocks.SusyStoneVariantBlock;
 import supersymmetry.common.materials.SusyMaterials;
 import supersymmetry.loaders.SuSyMetaTileEntityLoader;
-import trackapi.lib.Gauges;
+//import trackapi.lib.Gauges;
 
 import java.util.Arrays;
 import java.util.EnumMap;

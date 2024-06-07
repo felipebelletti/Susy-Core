@@ -1,6 +1,5 @@
 package supersymmetry.common.blocks;
 
-import gregicality.multiblocks.common.block.blocks.BlockUniqueCasing;
 import gregtech.api.block.IStateHarvestLevel;
 import gregtech.api.block.VariantActiveBlock;
 import gregtech.client.utils.BloomEffectUtil;
